@@ -1,0 +1,14 @@
+com/producerapp/MainApplication.java
+ com.producerapp.MainApplication
+ com.producerapp.MainApplication$1
+com/producerapp/MainActivity.java
+ com.producerapp.MainActivity
+com/producerapp/ReactNativeFlipper.java
+ com.producerapp.ReactNativeFlipper
+ com.producerapp.ReactNativeFlipper$1
+ com.producerapp.ReactNativeFlipper$2
+ com.producerapp.ReactNativeFlipper$2$1
+com/producerapp/BuildConfig.java
+ com.producerapp.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
