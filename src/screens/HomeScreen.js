@@ -17,9 +17,12 @@ export default class HomeScreen extends Component {
 
   render() {
     return (
+      <View>
+      <Header />
       <View style={styles.container}>
-        <Header />
+        
         <Text>HEJ</Text>
+      </View>
       </View>
     );
   }

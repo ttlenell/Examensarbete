@@ -30,7 +30,7 @@ const AppContainer = createAppContainer(
     },
     {
       // change App to Auth for login
-      initialRouteName: 'Auth',
+      initialRouteName: 'App',
     },
   ),
 );
