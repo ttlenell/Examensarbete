@@ -1,6 +1,0 @@
-module Pods_ProducerApp_ProducerAppTests {
-  umbrella header "Pods-ProducerApp-ProducerAppTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
