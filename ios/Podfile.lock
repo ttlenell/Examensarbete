@@ -314,6 +314,10 @@ PODS:
     - React-jsi (= 0.63.4)
   - RNGestureHandler (1.9.0):
     - React-Core
+  - RNI18n (2.0.15):
+    - React
+  - RNLocalize (2.0.1):
+    - React-Core
   - RNScreens (2.16.1):
     - React-Core
   - Yoga (1.14.0)
@@ -373,6 +377,8 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler/RNGestureHandler.podspec`)
+  - RNI18n (from `../node_modules/react-native-i18n`)
+  - RNLocalize (from `../node_modules/react-native-localize`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -455,6 +461,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNGestureHandler:
     :podspec: "../node_modules/react-native-gesture-handler/RNGestureHandler.podspec"
+  RNI18n:
+    :path: "../node_modules/react-native-i18n"
+  RNLocalize:
+    :path: "../node_modules/react-native-localize"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   Yoga:
@@ -504,6 +514,8 @@ SPEC CHECKSUMS:
   React-RCTVibration: ae4f914cfe8de7d4de95ae1ea6cc8f6315d73d9d
   ReactCommon: 73d79c7039f473b76db6ff7c6b159c478acbbb3b
   RNGestureHandler: 9b7e605a741412e20e13c512738a31bd1611759b
+  RNI18n: e2f7e76389fcc6e84f2c8733ea89b92502351fd8
+  RNLocalize: 41026b7c14878f1a1b381bc79f668f1fbf841adb
   RNScreens: 45c457af3d2ee9e08fc01e70da87e653d46b1198
   Yoga: 4bd86afe9883422a7c4028c00e34790f560923d6
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
