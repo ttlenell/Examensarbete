@@ -2,6 +2,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import React, {Component} from 'react';
 import Orientation from 'react-native-orientation-locker';
 import Header from '../components/header';
+import I18n from '../utils/i18n';
 
 export default class HomeScreen extends Component {
   static navigationsOptions = {
@@ -21,7 +22,9 @@ export default class HomeScreen extends Component {
       <Header />
       <View style={styles.container}>
         
-        <Text>HEJ</Text>
+        <Text>{I18n.t("hello")}</Text>
+        <Text>{I18n.t("hej")}</Text>
+        <Text>{I18n.t("hello")}</Text>
       </View>
       </View>
     );

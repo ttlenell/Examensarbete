@@ -1,10 +1,11 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import I18n from '../utils/i18n';
 
 export default function Header() {
   return (
     <View style={styles.header}>
-      <Text style={styles.title}>StayLive sändningar</Text>
+      <Text style={styles.title}>{I18n.t("hello")}</Text>
     </View>
   );
 }
