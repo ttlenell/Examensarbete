@@ -1,14 +1,12 @@
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, SafeAreaView} from 'react-native';
 import React, {Component} from 'react';
 import Orientation from 'react-native-orientation-locker';
 import Header from '../components/header';
 import I18n from '../utils/i18n';
+import BroadcastList from '../components/broadcastList';
 
 export default class HomeScreen extends Component {
-  static navigationsOptions = {
-    title: 'StayLive Producer App',
-    headerShown: false,
-  };
+
 
   state = {};
 
@@ -18,25 +16,25 @@ export default class HomeScreen extends Component {
 
   render() {
     return (
-      <View>
-      <Header />
+     <SafeAreaView>
+        <Header />
       <View style={styles.container}>
-        
-        <Text>{I18n.t("hello")}</Text>
-        <Text>{I18n.t("hej")}</Text>
-        <Text>{I18n.t("hello")}</Text>
+      <BroadcastList />
+    
       </View>
-      </View>
+      </SafeAreaView>
     );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
+
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#3399ff',
+    // backgroundColor: '#3399ff',
+    backgroundColor: 'grey',
     borderColor: 'black',
     borderWidth: 10,
     width: '100%',
