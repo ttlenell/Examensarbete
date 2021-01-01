@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import React, {Component} from 'react';
 import {createStackNavigator} from 'react-navigation-stack';
@@ -10,9 +11,9 @@ const AppStack = createStackNavigator({
   Home: {
     screen: HomeScreen,
     navigationOptions: () => ({
-      headerShown: false
-    })
-  }
+      headerShown: false,
+    }),
+  },
   // Form: StreamFormScreen,
   //   Detail: StreamDetailScreen,
   // Live: LivestreamScreen,

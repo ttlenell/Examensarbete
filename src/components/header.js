@@ -1,22 +1,21 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
-import {StyleSheet, Text, View, Image} from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import I18n from '../utils/i18n';
 
 export default function Header() {
   return (
     <View style={styles.header}>
-          
-                <Image
-                  style={{width: 50, height: 50, alignSelf: 'center'}}
-                  resizeMode="center"
-                  source={{
-                    uri:
-                      'https://image.staylive.se/resources/logotypes/staylivelogo_white_bg_no_text.png',
-                  }}
-                />
-              
-      <Text style={styles.title}>{I18n.t("headerAppName")}</Text>
+      <Image
+        style={{ width: 50, height: 50, alignSelf: 'center' }}
+        resizeMode="center"
+        source={{
+          uri:
+            'https://image.staylive.se/resources/logotypes/staylivelogo_white_bg_no_text.png',
+        }}
+      />
 
+      <Text style={styles.title}>{I18n.t('headerAppName')}</Text>
     </View>
   );
 }
@@ -48,6 +47,5 @@ const styles = StyleSheet.create({
   },
   imageLogo: {
     marginBottom: 10,
-    
   },
 });

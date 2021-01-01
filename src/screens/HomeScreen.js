@@ -1,13 +1,12 @@
-import {View, Text, StyleSheet, SafeAreaView} from 'react-native';
-import React, {Component} from 'react';
+/* eslint-disable prettier/prettier */
+import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
+import React, { Component } from 'react';
 import Orientation from 'react-native-orientation-locker';
 import Header from '../components/header';
 import I18n from '../utils/i18n';
 import BroadcastList from '../components/broadcastList';
 
 export default class HomeScreen extends Component {
-
-
   state = {};
 
   componentDidMount() {
@@ -16,12 +15,18 @@ export default class HomeScreen extends Component {
 
   render() {
     return (
-     <SafeAreaView>
+      <SafeAreaView>
         <Header />
-      <View style={styles.container}>
-      <BroadcastList />
-    
-      </View>
+        <View style={styles.container}>
+          <View style={styles.broadcastDash}>
+            <Text style={styles.chooseBroadcastText}>
+              {I18n.t('chooseBroadcast')}
+            </Text>
+            {/* will add clickable text/button for dashboard link */}
+            <Text style={styles.buttonText}>{I18n.t('dashboardInfo')}</Text>
+          </View>
+          <BroadcastList />
+        </View>
       </SafeAreaView>
     );
   }
@@ -40,10 +45,17 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
   },
-  textInfo: {
-    fontSize: 20,
-    fontStyle: 'italic',
+  broadcastDash: {
     alignItems: 'center',
+    flexDirection: 'column',
+    // borderWidth: 10,
+    // borderColor: 'black',
+    bottom: 370,
+  },
+  chooseBroadcastText: {
+    fontSize: 20,
+    alignItems: 'center',
+    paddingBottom: 20,
   },
 
   button: {
@@ -58,9 +70,6 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 18,
     color: '#fff',
-    fontWeight: 'bold',
-    alignSelf: 'center',
-    textTransform: 'uppercase',
   },
   listItem: {
     marginTop: 8,
