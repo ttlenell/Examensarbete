@@ -7,7 +7,12 @@ import LoginScreen from './screens/Auth/LoginScreen';
 // import RegisterScreen from './screens/Auth/RegisterScreen';
 
 const AppStack = createStackNavigator({
-  Home: HomeScreen,
+  Home: {
+    screen: HomeScreen,
+    navigationOptions: () => ({
+      headerShown: false
+    })
+  }
   // Form: StreamFormScreen,
   //   Detail: StreamDetailScreen,
   // Live: LivestreamScreen,
