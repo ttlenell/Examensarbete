@@ -1,10 +1,13 @@
 /* eslint-disable prettier/prettier */
-import {createAppContainer, createSwitchNavigator} from 'react-navigation';
+import {
+  createAppContainer,
+  createSwitchNavigator,
+} from '@react-navigation/native';
 import React, {Component} from 'react';
-import {createStackNavigator} from 'react-navigation-stack';
+import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from './screens/HomeScreen';
 // import LivestreamScreen from './screens/LivestreamScreen';
-import LoginScreen from './screens/Auth/LoginScreen';
+import LoginScreen from './auth/LoginScreen';
 // import RegisterScreen from './screens/Auth/RegisterScreen';
 
 const AppStack = createStackNavigator({
