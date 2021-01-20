@@ -10,17 +10,22 @@ import LoadingScreen from '../screens/LoadingScreen';
 // eslint-disable-next-line no-undef
 export default AppStackScreens = () => {
   const AppStack = createStackNavigator();
-  const [user] = useContext(UserContext);
+  //   const [user] = useContext(UserContext);
 
   return (
-    <AppStack.Navigator headerMode="none">
-      {user.isLoggedIn === null ? (
-        <AppStack.Screen name="Loading" component={LoadingScreen} />
-      ) : user.isLoggedIn ? (
-        <AppStack.Screen name="Main" component={MainStackScreens} />
-      ) : (
-        <AppStack.Screen name="Auth" component={AuthStackScreens} />
-      )}
+    <AppStack.Navigator headerMode="none" initialRouteName="Main">
+      <AppStack.Screen name="Main" component={MainStackScreens} />
     </AppStack.Navigator>
   );
+  //   return (
+  //     <AppStack.Navigator headerMode="none">
+  //       {user.isLoggedIn === null ? (
+  //         <AppStack.Screen name="Loading" component={LoadingScreen} />
+  //       ) : user.isLoggedIn ? (
+  //         <AppStack.Screen name="Main" component={MainStackScreens} />
+  //       ) : (
+  //         <AppStack.Screen name="Auth" component={AuthStackScreens} />
+  //       )}
+  //     </AppStack.Navigator>
+  //   );
 };
