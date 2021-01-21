@@ -1,12 +1,24 @@
-/* eslint-disable prettier/prettier */
 import {View, Text, StyleSheet, SafeAreaView} from 'react-native';
-import React from 'react';
+import React, {useContext} from 'react';
 // import Orientation from 'react-native-orientation-locker';
 import Header from '../components/header';
 import I18n from '../utils/i18n';
 import BroadcastList from '../components/broadcastList';
 
+// import {UserContext} from '../context/UserContext';
+// import {FirebaseContext} from '../context/FirebaseContext';
+
 export default function HomeScreen({navigation}) {
+  // const [user, setUser] = useContext(UserContext);
+  // const firebase = useContext(FirebaseContext);
+
+  // const logOut = async () => {
+  //   const loggedOut = await firebase.logOut();
+
+  //   if (loggedOut) {
+  //     setUser((state) => ({...state, isLoggedIn: false}));
+  //   }
+  // };
   return (
     <SafeAreaView>
       <Header />

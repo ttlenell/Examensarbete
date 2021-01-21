@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
-export default function Livestream({navigation}) {
+export default function LivestreamScreen({navigation}) {
   return (
     <View>
       <Text>livestream!</Text>
