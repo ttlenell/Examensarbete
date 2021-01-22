@@ -8,13 +8,14 @@ import {
   TouchableWithoutFeedback,
   KeyboardAvoidingView,
   Platform,
-  Image,
   Keyboard,
   TextInput,
 } from 'react-native';
+import LoginHeader from '../components/loginHeader';
+import loginHeader from '../components/loginHeader';
+
 import {FirebaseContext} from '../context/FirebaseContext';
 import {UserContext} from '../context/UserContext';
-import {Button, Icon} from 'native-base';
 
 // eslint-disable-next-line no-undef
 export default Login = ({navigation}) => {
@@ -55,19 +56,8 @@ export default Login = ({navigation}) => {
         enabled
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
         <SafeAreaView style={styles.container}>
+          <LoginHeader />
           <View style={styles.inner}>
-            <Text style={styles.greeting}>The Recipe App</Text>
-            <View style={styles.imageLogo}>
-              <Image
-                style={{width: 250, height: 250, alignSelf: 'center'}}
-                resizeMode="center"
-                source={{
-                  uri:
-                    'https://image.staylive.se/resources/logotypes/staylivelogo_white_bg_no_text.png',
-                }}
-              />
-            </View>
-
             <View style={styles.form}>
               <View style={{marginTop: 32}}>
                 <Text style={styles.inputTitle}>Email-adress</Text>
@@ -87,7 +77,7 @@ export default Login = ({navigation}) => {
                 <Text style={styles.inputTitle}>Lösenord</Text>
                 <TextInput
                   style={styles.input}
-                  placeholder={'Password'}
+                  placeholder={'Lösenord'}
                   // inlineImageLeft={'account'}
                   keyboardType="default"
                   autoCapitalize="none"
@@ -99,12 +89,7 @@ export default Login = ({navigation}) => {
               </View>
             </View>
             <TouchableOpacity
-              style={{
-                borderRadius: 20,
-                padding: 10,
-                justifyContent: 'center',
-                backgroundColor: 'green',
-              }}
+              style={styles.loginButton}
               onPress={() => signIn()}>
               <Text
                 style={{
@@ -122,9 +107,8 @@ export default Login = ({navigation}) => {
               }}
               onPress={() => navigation.navigate('Register')}>
               <Text style={{color: 'black', fontSize: 13}}>
-                Har du inget konto?
+                Har du inget konto? {''}
                 <Text style={{fontWeight: '500', color: '#E9446A'}}>
-                  {' '}
                   Registrera dig här
                 </Text>
                 <Text
@@ -136,7 +120,6 @@ export default Login = ({navigation}) => {
                 />
               </Text>
             </TouchableOpacity>
-            <View style={{flex: 1}} />
           </View>
         </SafeAreaView>
       </KeyboardAvoidingView>
@@ -147,13 +130,7 @@ export default Login = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    top: 50,
-  },
-  greeting: {
-    marginTop: 32,
-    fontSize: 22,
-    fontWeight: '400',
-    textAlign: 'center',
+    top: 0,
   },
   inner: {
     padding: 24,
@@ -177,11 +154,12 @@ const styles = StyleSheet.create({
     marginHorizontal: 30,
   },
   inputTitle: {
-    // color: '#8A8F9E',
     borderBottomWidth: StyleSheet.hairlineWidth,
     height: 40,
     fontSize: 15,
     color: '#161F3D',
+    // fontFamily: 'ProximaNova-Regular',
+    fontWeight: 'bold',
   },
   input: {
     borderWidth: 1,
@@ -189,10 +167,10 @@ const styles = StyleSheet.create({
     height: 35,
     fontSize: 18,
   },
-  button: {
+  loginButton: {
     marginHorizontal: 30,
-    backgroundColor: '#E9446A',
-    borderRadius: 4,
+    backgroundColor: '#3F57B4',
+    borderRadius: 6,
     height: 52,
     alignItems: 'center',
     justifyContent: 'center',

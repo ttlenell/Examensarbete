@@ -16,7 +16,7 @@ export default function Header() {
     }
   };
   return (
-    <View style={styles.header}>
+    <View style={styles.container}>
       <Button title="Logga ut" onPress={() => logOut()} />
       <Image
         style={{width: 50, height: 50, alignSelf: 'center'}}
@@ -33,7 +33,7 @@ export default function Header() {
 }
 
 const styles = StyleSheet.create({
-  header: {
+  container: {
     height: 80,
     paddingTop: 0,
     backgroundColor: 'blue',
