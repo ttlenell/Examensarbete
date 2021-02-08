@@ -3,8 +3,9 @@ import {NavigationContainer} from '@react-navigation/native';
 import AppStackScreens from './src/stacks/AppStackScreens';
 import {FirebaseProvider} from './src/context/FirebaseContext';
 import {UserProvider} from './src/context/UserContext';
+// import DrawerNavigator from './src/navigation/DrawerContainer';
 
-export default App = () => {
+const App = () => {
   return (
     <FirebaseProvider>
       <UserProvider>
@@ -15,3 +16,5 @@ export default App = () => {
     </FirebaseProvider>
   );
 };
+
+export default App;

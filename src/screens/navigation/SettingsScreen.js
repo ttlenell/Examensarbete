@@ -1,18 +1,19 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
-export default function LivestreamScreen({navigation}) {
+const Settings = () => {
   return (
-    <View style={styles.container}>
-      <Text>livestream!</Text>
+    <View>
+      <Text style={styles.container}>Drawer Settings</Text>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
   },
 });
+
+export default Settings;

@@ -1,6 +1,6 @@
 export default {
   hello: 'Hello',
-  signOut: 'Sig Out',
+  signOut: 'Sign Out',
   signIn: 'Sign in',
   email: 'Email',
   password: 'Password',

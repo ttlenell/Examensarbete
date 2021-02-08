@@ -1,30 +1,28 @@
-/* eslint-disable prettier/prettier */
-import React, {useContext} from 'react';
-import {StyleSheet, Text, View, Image, Button} from 'react-native';
-import I18n from '../utils/i18n';
-import {UserContext} from '../context/UserContext';
-import {FirebaseContext} from '../context/FirebaseContext';
+import React from 'react';
+import {StyleSheet, View, Image, TouchableOpacity} from 'react-native';
+
+import {useNavigation} from '@react-navigation/native';
+import Icon from 'react-native-vector-icons/Feather';
 
 export default function Header() {
-  const [user, setUser] = useContext(UserContext);
-  const firebase = useContext(FirebaseContext);
-  const logOut = async () => {
-    const loggedOut = await firebase.logOut();
-
-    if (loggedOut) {
-      setUser((state) => ({...state, isLoggedIn: false}));
-    }
-  };
+  function DrawerButton() {
+    const navigation = useNavigation();
+    return (
+      <TouchableOpacity
+        style={styles.headerMenu}
+        onPress={() => navigation.toggleDrawer()}>
+        <Icon name="menu" size={45} color="#FFFF" />
+      </TouchableOpacity>
+    );
+  }
   return (
     <View style={styles.container}>
-      <Button title="Logga ut" onPress={() => logOut()} />
       <Image
         style={styles.imageLogo}
         resizeMode="center"
         source={require('../assets/images/staylivelogo8.png')}
       />
-
-      <Text style={styles.title}>{I18n.t('headerAppName')}</Text>
+      <DrawerButton />
     </View>
   );
 }
@@ -32,32 +30,24 @@ export default function Header() {
 const styles = StyleSheet.create({
   container: {
     height: 80,
-    paddingTop: 0,
-    backgroundColor: 'blue',
-    bottom: 0,
-    marginBottom: 0,
+    backgroundColor: '#3B40B5',
     flexDirection: 'row',
     justifyContent: 'center',
-    // justifyContent: 'space-evenly'
   },
-  title: {
-    // textAlign: 'center',
-    top: 30,
-    right: -10,
-    color: '#fff',
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  description: {
-    textAlign: 'center',
-    color: '#fff',
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
+
   imageLogo: {
     marginBottom: 10,
-    width: 50,
-    height: 50,
+    width: 150,
+    height: 150,
+    left: 55,
     alignSelf: 'center',
+  },
+
+  headerMenu: {
+    margin: 10,
+    marginTop: 15,
+    left: 110,
+    width: 70,
+    height: 70,
   },
 });

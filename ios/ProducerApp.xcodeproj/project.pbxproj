@@ -7,37 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00863BCA698241A8B1F4877B /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95BE4CE1CBC44187B807EDF4 /* Ionicons.ttf */; };
 		00E356F31AD99517003FC87E /* ProducerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ProducerAppTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		172D55718CAA4EADB13009FD /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8D11026D23542F394A422AC /* FontAwesome.ttf */; };
 		1C462D0CA6DF5D77ECB4D48D /* libPods-ProducerApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DE2BB52837720E1F931CBB /* libPods-ProducerApp-tvOS.a */; };
-		1F68A2C6EA504E16AAC3C756 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD43FDDE2E74B0EB2070919 /* Entypo.ttf */; };
-		235B90DA293E40B99061EAC8 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF07674FAF264119941BB6AD /* Roboto.ttf */; };
-		27D885D91D1545F3AC2AC2CF /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68B384D693C94B10B26C599F /* Roboto_medium.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* ProducerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ProducerAppTests.m */; };
-		328821F643624ED5AA3DE500 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 054D01B9337446D28D27C042 /* MaterialIcons.ttf */; };
-		3A20D0A2F4D84137882B3C37 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 324DC83B938B477DAC4174F4 /* FontAwesome5_Solid.ttf */; };
-		61D9661E7BD5445CBEEE6B23 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F94A1F86BC08420CB16B2D41 /* EvilIcons.ttf */; };
-		71666967AAB54543A9FD5674 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA374094157647198230287B /* rubicon-icon-font.ttf */; };
-		73C06579BDC64E259BFD7197 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE78A0E0CE943868BFD18B8 /* AntDesign.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8261B1847CA94C8DBE230772 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBC7C86787FF42BD98EDC812 /* FontAwesome5_Regular.ttf */; };
 		8627396A90F1564D4760B2AA /* libPods-ProducerApp-ProducerAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30388B62BAA887FC276EA839 /* libPods-ProducerApp-ProducerAppTests.a */; };
-		86597210C1AD47E0AE809BAB /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC4C060943874A10AAF89A86 /* FontAwesome5_Brands.ttf */; };
-		86E4586D06274BFEB5FE4BF7 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11A67ECC741E4AA09176241F /* SimpleLineIcons.ttf */; };
-		8D4675909D1042229BB11CFB /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9226877DBCB492EB5E11558 /* Fontisto.ttf */; };
-		95078162262F4188BF3D7CF7 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFADD6B0BF6B499296FDBAB8 /* Feather.ttf */; };
-		9A7947F51FC9421B94AA6AC0 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CD0E577256D4BEFAA0B7636 /* MaterialCommunityIcons.ttf */; };
-		9A91E99B825C46D08CCDA78B /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CEEEB97A73541DB93B35C76 /* Zocial.ttf */; };
 		AA4A69C89D5033C91B7338F2 /* libPods-ProducerApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF8D2497CEE75089EC0237D /* libPods-ProducerApp-tvOSTests.a */; };
-		BC89641704104513A9AD1FBF /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD0178507BD647F19023A7B0 /* Foundation.ttf */; };
-		EF6474AF85B04B83A5B9D2B7 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C919D249059F41E3A724AC16 /* Octicons.ttf */; };
 		F668BF8C94ECED00B0B30503 /* libPods-ProducerApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF444A6D2E3D9C9830BA2372 /* libPods-ProducerApp.a */; };
 /* End PBXBuildFile section */
 
@@ -274,7 +255,6 @@
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
 				B94DDD4359115B63B5FA751D /* [CP] Copy Pods Resources */,
-				E50D6F72DAD89048A55EE89C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,7 +277,6 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				BD5DA3F31782D8CF22D99002 /* [CP] Copy Pods Resources */,
-				8561C65BB19CF38418C4B497 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,7 +333,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -409,25 +388,6 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				73C06579BDC64E259BFD7197 /* AntDesign.ttf in Resources */,
-				1F68A2C6EA504E16AAC3C756 /* Entypo.ttf in Resources */,
-				61D9661E7BD5445CBEEE6B23 /* EvilIcons.ttf in Resources */,
-				95078162262F4188BF3D7CF7 /* Feather.ttf in Resources */,
-				172D55718CAA4EADB13009FD /* FontAwesome.ttf in Resources */,
-				86597210C1AD47E0AE809BAB /* FontAwesome5_Brands.ttf in Resources */,
-				8261B1847CA94C8DBE230772 /* FontAwesome5_Regular.ttf in Resources */,
-				3A20D0A2F4D84137882B3C37 /* FontAwesome5_Solid.ttf in Resources */,
-				8D4675909D1042229BB11CFB /* Fontisto.ttf in Resources */,
-				BC89641704104513A9AD1FBF /* Foundation.ttf in Resources */,
-				00863BCA698241A8B1F4877B /* Ionicons.ttf in Resources */,
-				9A7947F51FC9421B94AA6AC0 /* MaterialCommunityIcons.ttf in Resources */,
-				328821F643624ED5AA3DE500 /* MaterialIcons.ttf in Resources */,
-				EF6474AF85B04B83A5B9D2B7 /* Octicons.ttf in Resources */,
-				27D885D91D1545F3AC2AC2CF /* Roboto_medium.ttf in Resources */,
-				235B90DA293E40B99061EAC8 /* Roboto.ttf in Resources */,
-				71666967AAB54543A9FD5674 /* rubicon-icon-font.ttf in Resources */,
-				86E4586D06274BFEB5FE4BF7 /* SimpleLineIcons.ttf in Resources */,
-				9A91E99B825C46D08CCDA78B /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,24 +529,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8561C65BB19CF38418C4B497 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProducerApp/Pods-ProducerApp-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProducerApp/Pods-ProducerApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8A9AE13600EBC1ACA535A705 /* [CP] Check Pods Manifest.lock */ = {
@@ -731,24 +673,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProducerApp/Pods-ProducerApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E50D6F72DAD89048A55EE89C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProducerApp-ProducerAppTests/Pods-ProducerApp-ProducerAppTests-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProducerApp-ProducerAppTests/Pods-ProducerApp-ProducerAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
