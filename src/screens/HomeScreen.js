@@ -27,6 +27,7 @@ export default function HomeScreen({navigation}) {
           <Text style={styles.chooseBroadcastText}>
             {I18n.t('chooseBroadcast')}
           </Text>
+          hejsan
           {/* will add clickable text/button for dashboard link */}
           <Text style={styles.buttonText}>{I18n.t('dashboardInfo')}</Text>
         </View>
