@@ -19,12 +19,9 @@ export default function Header() {
     <View style={styles.container}>
       <Button title="Logga ut" onPress={() => logOut()} />
       <Image
-        style={{width: 50, height: 50, alignSelf: 'center'}}
+        style={styles.imageLogo}
         resizeMode="center"
-        source={{
-          uri:
-            'https://image.staylive.se/resources/logotypes/staylivelogo_white_bg_no_text.png',
-        }}
+        source={require('../assets/images/staylivelogo8.png')}
       />
 
       <Text style={styles.title}>{I18n.t('headerAppName')}</Text>
@@ -59,5 +56,8 @@ const styles = StyleSheet.create({
   },
   imageLogo: {
     marginBottom: 10,
+    width: 50,
+    height: 50,
+    alignSelf: 'center',
   },
 });

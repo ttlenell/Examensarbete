@@ -14,18 +14,17 @@ export default function LoginHeader() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#3F57B4',
-
-    padding: 10,
+    backgroundColor: '#3B40B5',
+    padding: 0,
     flex: 1,
-    marginBottom: 50,
+    marginBottom: 140,
   },
 
   image: {
     alignSelf: 'center',
-    marginTop: 50,
-    width: 270,
-    height: 270,
+    marginTop: 25,
+    width: 200,
+    height: 200,
     resizeMode: 'stretch',
   },
 });

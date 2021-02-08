@@ -12,13 +12,15 @@ import {
   TextInput,
 } from 'react-native';
 import LoginHeader from '../components/loginHeader';
-import loginHeader from '../components/loginHeader';
+
+import I18n from '../utils/i18n';
 
 import {FirebaseContext} from '../context/FirebaseContext';
 import {UserContext} from '../context/UserContext';
 
-// eslint-disable-next-line no-undef
-export default Login = ({navigation}) => {
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+const Login = ({navigation}) => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [loading, setLoading] = useState(false);
@@ -59,12 +61,11 @@ export default Login = ({navigation}) => {
           <LoginHeader />
           <View style={styles.inner}>
             <View style={styles.form}>
-              <View style={{marginTop: 32}}>
-                <Text style={styles.inputTitle}>Email-adress</Text>
+              <View>
+                <Text style={styles.inputTitle}>{I18n.t('email')}</Text>
                 <TextInput
                   style={styles.input}
-                  placeholder={'Email'}
-                  // inlineImageLeft={'account'}
+                  placeholder={I18n.t('email')}
                   keyboardType="default"
                   autoCapitalize="none"
                   autoCorrect={false}
@@ -73,12 +74,11 @@ export default Login = ({navigation}) => {
                   value={email}
                 />
               </View>
-              <View style={{marginTop: 32}}>
-                <Text style={styles.inputTitle}>Lösenord</Text>
+              <View style={{marginTop: 24}}>
+                <Text style={styles.inputTitle}>{I18n.t('password')}</Text>
                 <TextInput
                   style={styles.input}
-                  placeholder={'Lösenord'}
-                  // inlineImageLeft={'account'}
+                  placeholder={I18n.t('password')}
                   keyboardType="default"
                   autoCapitalize="none"
                   autoCorrect={false}
@@ -91,35 +91,26 @@ export default Login = ({navigation}) => {
             <TouchableOpacity
               style={styles.loginButton}
               onPress={() => signIn()}>
-              <Text
-                style={{
-                  textAlign: 'center',
-                  color: 'white',
-                  fontSize: 25,
-                }}>
-                Logga in
+              <Text style={styles.logInButtonTextStyle}>
+                {I18n.t('signIn')}
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity
-              style={{
-                alignSelf: 'center',
-                marginTop: 32,
-              }}
-              onPress={() => navigation.navigate('Register')}>
-              <Text style={{color: 'black', fontSize: 13}}>
-                Har du inget konto? {''}
-                <Text style={{fontWeight: '500', color: '#E9446A'}}>
-                  Registrera dig här
+            <View>
+              <TouchableOpacity style={styles.forgotPasswordButton}>
+                <Text style={styles.createAccountButtonTextStyle}>
+                  {I18n.t('forgotPassword')} {''}
+                  <Icon name="external-link" size={20} />
                 </Text>
-                <Text
-                  style={{
-                    textAlign: 'center',
-                    color: 'white',
-                    fontSize: 25,
-                  }}
-                />
-              </Text>
-            </TouchableOpacity>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.createAccountButton}
+                onPress={() => navigation.navigate('Register')}>
+                <Text style={styles.createAccountButtonTextStyle}>
+                  {I18n.t('createAccount')}{' '}
+                  <Icon name="external-link" size={20} />
+                </Text>
+              </TouchableOpacity>
+            </View>
           </View>
         </SafeAreaView>
       </KeyboardAvoidingView>
@@ -130,27 +121,16 @@ export default Login = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    top: 0,
   },
   inner: {
-    padding: 24,
+    padding: 20,
+    marginBottom: 120,
     flex: 1,
     justifyContent: 'flex-end',
   },
-  errorMessage: {
-    height: 72,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginHorizontal: 30,
-  },
-  error: {
-    color: '#E9446A',
-    fontSize: 13,
-    fontWeight: '600',
-    textAlign: 'center',
-  },
+
   form: {
-    marginBottom: 48,
+    marginBottom: 70,
     marginHorizontal: 30,
   },
   inputTitle: {
@@ -169,10 +149,30 @@ const styles = StyleSheet.create({
   },
   loginButton: {
     marginHorizontal: 30,
-    backgroundColor: '#3F57B4',
+    backgroundColor: '#3B40B5',
     borderRadius: 6,
     height: 52,
     alignItems: 'center',
     justifyContent: 'center',
+    bottom: 40,
+  },
+  logInButtonTextStyle: {
+    textAlign: 'center',
+    color: 'white',
+    fontSize: 25,
+  },
+  createAccountButtonTextStyle: {
+    color: 'black',
+    fontSize: 18,
+  },
+  forgotPasswordButton: {
+    alignSelf: 'center',
+    marginTop: 32,
+  },
+  createAccountButton: {
+    alignSelf: 'center',
+    marginTop: 32,
   },
 });
+
+export default Login;
