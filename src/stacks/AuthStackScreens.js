@@ -4,8 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import LoginScreen from '../auth/LoginScreen';
 import RegisterScreen from '../auth/RegisterScreen';
 
-// eslint-disable-next-line no-undef
-export default AuthStackScreens = () => {
+const AuthStackScreens = () => {
   const AuthStack = createStackNavigator();
 
   return (
@@ -15,3 +14,5 @@ export default AuthStackScreens = () => {
     </AuthStack.Navigator>
   );
 };
+
+export default AuthStackScreens;
